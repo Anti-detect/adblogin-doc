@@ -1,1 +1,185 @@
-x
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn sử dụng Gologin Automation Tool - ADBLogin</title>
+    <meta name="description" content="Hướng dẫn 3 bước đơn giản để cài đặt và sử dụng Tool Auto Create-Download-Manager Profiles Gologin. Giải pháp quản lý nhiều tài khoản online hiệu quả.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(90deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        .copy-btn:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <header class="gradient-bg text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="https://adblogin.com" class="text-2xl font-bold tracking-tight hover:opacity-90">
+                <i class="fa-solid fa-layer-group mr-2"></i>ADBLogin Docs
+            </a>
+            <a href="https://adblogin.com" class="bg-white text-blue-800 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition text-sm">
+                Trang chủ
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-10">
+        <div class="text-center mb-10">
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Tutorial</span>
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mt-4 mb-4">
+                Quản Lý Hồ Sơ Gologin Chuyên Nghiệp
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Bạn đang gặp khó khăn trong việc quản lý nhiều tài khoản online? <br>
+                Giải pháp Automation chỉ với <strong>3 bước đơn giản</strong> dưới đây.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 border border-gray-100">
+            <div class="aspect-w-16 aspect-h-9 relative" style="padding-bottom: 56.25%;">
+                <iframe class="absolute top-0 left-0 w-full h-full" 
+                    src="https://www.youtube.com/embed/LOqdP2QTwJY?rel=0" 
+                    title="Hướng dẫn sử dụng Gologin" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="p-6 bg-gray-50 border-t">
+                <h3 class="font-bold text-gray-900"><i class="fa-brands fa-youtube text-red-600 mr-2"></i>Nội dung chính:</h3>
+                <ul class="mt-2 space-y-1 text-sm text-gray-600 list-disc list-inside">
+                    <li>Cách đăng ký & cài đặt Gologin miễn phí.</li>
+                    <li>Tải tool Automation và cách giải nén an toàn.</li>
+                    <li>Kích hoạt Bot Telegram và quản lý hàng loạt profile.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="space-y-8">
+            <div class="step-card bg-white p-6 md:p-8 rounded-xl shadow border-l-4 border-blue-600 transition duration-300">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center text-blue-600 font-bold text-xl mr-4">
+                        1
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-bold text-gray-900 mb-2">Đăng Ký & Cài Đặt</h2>
+                        <p class="text-gray-600 mb-4">
+                            Đầu tiên, bạn cần có tài khoản Gologin và ứng dụng nền tảng để chạy profile.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="https://gologin.com" target="_blank" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
+                                <i class="fa-solid fa-user-plus mr-2"></i> Đăng ký Free
+                            </a>
+                            <a href="https://gologin.com/download" target="_blank" class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                                <i class="fa-brands fa-windows mr-2"></i> Tải App Gologin
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card bg-white p-6 md:p-8 rounded-xl shadow border-l-4 border-indigo-500 transition duration-300">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-indigo-100 rounded-full w-12 h-12 flex items-center justify-center text-indigo-600 font-bold text-xl mr-4">
+                        2
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-bold text-gray-900 mb-2">Tải Tool & Giải Nén</h2>
+                        <p class="text-gray-600 mb-4">
+                            Tải công cụ <strong>"Auto Create-Download-Manager Profiles"</strong> từ Google Drive.
+                        </p>
+                        
+                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs font-bold text-yellow-800 uppercase">Mật khẩu giải nén:</span>
+                                    <div class="text-lg font-mono font-bold text-gray-800 mt-1" id="passText">999</div>
+                                </div>
+                                <button onclick="copyText('999')" class="copy-btn text-yellow-700 hover:text-yellow-900 bg-yellow-200 hover:bg-yellow-300 px-3 py-1 rounded text-sm font-medium transition">
+                                    <i class="fa-regular fa-copy mr-1"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="#" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium">
+                            <i class="fa-brands fa-google-drive mr-2"></i> Link tải Tool (Google Drive) &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card bg-white p-6 md:p-8 rounded-xl shadow border-l-4 border-green-500 transition duration-300">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-green-100 rounded-full w-12 h-12 flex items-center justify-center text-green-600 font-bold text-xl mr-4">
+                        3
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-bold text-gray-900 mb-2">Kích Hoạt & Quản Lý</h2>
+                        <p class="text-gray-600 mb-4">
+                            Mở Tool lên, sau đó gửi Key kích hoạt cho Bot Telegram để bắt đầu sử dụng.
+                        </p>
+                        
+                        <div class="bg-gray-100 rounded-lg p-4 mb-4">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <i class="fa-brands fa-telegram text-blue-500 text-2xl mr-3"></i>
+                                    <div>
+                                        <div class="text-xs text-gray-500">Bot kích hoạt:</div>
+                                        <div class="font-bold text-gray-800">Gologin Automation Active Bot</div>
+                                    </div>
+                                </div>
+                                <button onclick="copyText('Gologin Automation Active Bot')" class="copy-btn text-gray-500 hover:text-blue-600 transition">
+                                    <i class="fa-regular fa-copy text-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <p class="text-sm text-gray-500 italic">
+                            *Sau khi kích hoạt, bạn có thể tạo hàng loạt profile và quản lý dễ dàng ngay trên Tool.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 bg-blue-50 rounded-xl p-6 text-center">
+            <h3 class="text-lg font-bold text-blue-900 mb-2">Cần hỗ trợ thêm?</h3>
+            <p class="text-blue-700 mb-4">Tham gia cộng đồng ADBLogin để được giải đáp thắc mắc.</p>
+            <a href="https://adblogin.com" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+                Liên hệ Support
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p>&copy; 2024 ADBLogin. All rights reserved.</p>
+            <p class="text-sm mt-2">Hướng dẫn được xây dựng dựa trên video: <a href="https://youtu.be/LOqdP2QTwJY" target="_blank" class="text-blue-400 hover:underline">Sử Dụng Gologin trong 3 Bước</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Đã copy: ' + text);
+            }, function(err) {
+                console.error('Lỗi copy: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
